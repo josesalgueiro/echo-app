@@ -1,4 +1,4 @@
-appName = "tbernardo-echo-app"
+appName = "jsalgueiro-echo-app"
 appServiceName = "api"
-dbName = "my-echodb"
+dbName = "jsalgueiro-echodb"
 dbAdmin = "dbadmin"

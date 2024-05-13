@@ -40,6 +40,7 @@ using (var context = app.Services.CreateScope().ServiceProvider.GetRequiredServi
     }
 }
 
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

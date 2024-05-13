@@ -40,6 +40,7 @@ using (var context = app.Services.CreateScope().ServiceProvider.GetRequiredServi
     }
 }
 
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -57,7 +58,7 @@ if (app.Environment.IsDevelopment())
 
 app.MapGet("/echo/{message}", (string message, EchoHistoryDb db) =>
 {
-    string logMessage = string.Format("Echoing message: {0}", message);
+    string logMessage = string.Format("Echoing message: {0} - {1}", message, Guid.NewGuid().ToString());
     app.Logger.LogInformation(logMessage);
     db.EchoLogs.Add(new EchoHistory { Message = logMessage });
     db.SaveChanges();

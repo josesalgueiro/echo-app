@@ -36,7 +36,8 @@ builder.Configuration.AddAzureAppConfiguration(options =>
 });
 
 var app = builder.Build();
-
+app.UseAzureAppConfiguration()
+    
 app.UseCors("CorsPolicy");
 
 // Configure the HTTP request pipeline.

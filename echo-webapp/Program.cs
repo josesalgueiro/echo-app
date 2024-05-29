@@ -1,3 +1,4 @@
+using Microsoft.FeatureManagement;
 using Microsoft.Extensions.Logging.Console;
 
 var builder = WebApplication.CreateBuilder(args);

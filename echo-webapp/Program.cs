@@ -36,7 +36,7 @@ builder.Configuration.AddAzureAppConfiguration(options =>
 });
 
 var app = builder.Build();
-app.UseAzureAppConfiguration()
+app.UseAzureAppConfiguration();
     
 app.UseCors("CorsPolicy");
 

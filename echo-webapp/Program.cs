@@ -1,5 +1,5 @@
-using Microsoft.FeatureManagement;
 using Microsoft.Extensions.Logging.Console;
+using Microsoft.FeatureManagement;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,7 +37,7 @@ builder.Configuration.AddAzureAppConfiguration(options =>
 
 var app = builder.Build();
 app.UseAzureAppConfiguration();
-    
+
 app.UseCors("CorsPolicy");
 
 // Configure the HTTP request pipeline.
